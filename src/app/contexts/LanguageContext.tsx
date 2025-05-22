@@ -6,9 +6,8 @@ type Language = "en" | "hi";
 
 interface LanguageContextType {
   language: Language;
-  toggleLanguage: () => void;
+  toggleLanguage: (lang?: Language) => void; // Optional parameter
 }
-
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
