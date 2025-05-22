@@ -118,9 +118,7 @@ export default function Login() {
                   <input type="checkbox" className="h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded" />
                   <span className="ml-2">{language === 'en' ? 'Remember me' : 'मुझे याद रखें'}</span>
                 </label>
-                <Link href="/forgot-password" className="text-sm text-blue-800 hover:text-blue-600 font-medium">
-                  {language === 'en' ? 'Forgot password?' : 'पासवर्ड भूल गए?'}
-                </Link>
+               
               </div>
 
               <button
