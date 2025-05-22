@@ -176,7 +176,7 @@ export default function ScribeRegistration() {
         </button>
       </header>
 
-      <main className="flex-1 flex justify-center mt-20 `items-center py-8 px-2">
+      <main className="flex-1 flex justify-center mt-20 items-center py-8 px-2">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-2xl bg-white rounded-xl shadow-lg p-8 grid grid-cols-1 md:grid-cols-2 gap-6"
@@ -355,7 +355,13 @@ export default function ScribeRegistration() {
             <label className="block mb-1 font-medium">
               {t.uploadQualification} <span className="text-green-500">{t.required}</span>
             </label>
-            <input accept="image/*" required class="w-full" type="file">
+            <input
+              accept="application/pdf"
+              required
+              className="w-full"
+              type="file"
+              onChange={handleFileChange}
+            />
           </div>
 
           {error && (
