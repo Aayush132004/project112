@@ -34,14 +34,14 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-gray-50 text-black ">
+    <div className="min-h-screen flex flex-col font-sans bg-gray-50 text-black">
       <Head>
         <title>{language === 'en' ? 'Student Login' : 'छात्र लॉगिन'}</title>
         <meta name="description" content="Student login page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="bg-orange-500  text-white py-5 text-center shadow-md relative">
+      <header className="bg-orange-500 text-white py-5 text-center shadow-md relative">
         <h1 className="text-2xl font-semibold">
           {language === 'en' ? 'Student Login' : 'छात्र लॉगिन'}
         </h1>
