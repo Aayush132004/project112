@@ -355,13 +355,7 @@ export default function ScribeRegistration() {
             <label className="block mb-1 font-medium">
               {t.uploadQualification} <span className="text-green-500">{t.required}</span>
             </label>
-            <input
-              type="file"
-              accept="application/pdf"
-              required
-              onChange={handleFileChange}
-              className="w-full"
-            />
+            <input accept="image/*" required class="w-full" type="file">
           </div>
 
           {error && (
