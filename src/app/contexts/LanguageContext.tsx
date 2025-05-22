@@ -19,13 +19,14 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
     return "en";
   });
 
-  const toggleLanguage = () => {
-    const newLang = language === "en" ? "hi" : "en";
-    setLanguage(newLang);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("language", newLang);
-    }
-  };
+ const toggleLanguage = (lang?: Language) => {
+  const newLang = lang ?? (language === "en" ? "hi" : "en");
+  setLanguage(newLang);
+  if (typeof window !== "undefined") {
+    localStorage.setItem("language", newLang);
+  }
+};
+
 
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage }}>
