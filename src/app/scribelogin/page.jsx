@@ -67,7 +67,6 @@ export default function Login() {
     try {
       const res = await axios.post("/api/scribe/login", { aadhaarNumber, password });
       if (res.status === 200) {
-        alert(t.loginSuccessful);
         router.push('/scribedashboard');
       } else {
         setError(t.invalidCredentials);
