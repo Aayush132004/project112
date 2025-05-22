@@ -23,7 +23,7 @@ export default function Login() {
     try {
       const res = await axios.post('/api/student/login', { aadhaarNumber, password });
       if (res.status === 200) {
-        console. log("login successful");
+        console.log("login successful");
       } else {
         alert(language === 'en' ? 'Invalid credentials. Please try again.' : 'अमान्य प्रमाण-पत्र। कृपया पुनः प्रयास करें।');
       }
