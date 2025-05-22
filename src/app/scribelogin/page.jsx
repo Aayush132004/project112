@@ -168,9 +168,7 @@ export default function Login() {
                   </label>
                 </div>
                 <div className="text-sm">
-                  <Link href="/forgot-password" className="text-blue-800 hover:text-blue-600 font-medium">
-                    {t.forgotPassword}
-                  </Link>
+                
                 </div>
               </div>
 
