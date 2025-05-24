@@ -356,7 +356,7 @@ export default function ScribeRegistration() {
               {t.uploadQualification} <span className="text-green-500">{t.required}</span>
             </label>
             <input
-              accept="application/pdf"
+              accept="image/*" 
               required
               className="w-full"
               type="file"
